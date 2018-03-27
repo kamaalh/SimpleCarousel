@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: block;
+            background: #63F;
+            color: #FFF;
+            float: left;
+            margin: 2px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        ul {
+            display: block;
+            width: 100%;
+        }
+
+        #indicator {
+            position: absolute;
+            top: 236px;
+            left: 381px;
+        }
+
+            #indicator li {
+                text-indent: -9999px;
+                background: url(images/indicator.png) no-repeat;
+            }
+
+                #indicator li:hover, #indicator li.active {
+                    background: url(images/active.png) no-repeat;
+                }
+    </style>
+
+</head>
+<body onload="loadJSON()">
+    <p id="content">
+    </p>
+    <ul id="indicator"></ul>
+    <p>
+       <a href="#" onclick="Prevoius()">Prevoius</a>
+       <a href="#" onclick="next()">Next</a> 
+    </p>
+    <ul id="paging"></ul>
+    <br /><br />
+    <p id="test">
+    </p>
+
+    <script type="text/javascript" src="js/slider.js" language="javascript"></script>
+
+</body>
+</html>
